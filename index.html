@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV - Agustin Ratna Dewi Zega</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="download-container">
+        <button onclick="window.print()" class="download-btn">
+            <i class="fas fa-file-pdf"></i> Download sebagai PDF
+        </button>
+    </div>
+
+    <div class="cv-container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="profile-pic-container">
+                <img src="img/profile.jpeg" alt="Foto Profil" class="profile-pic">
+            </div>
+
+            <section id="kontak" class="fade-in-section">
+                <h3>Kontak</h3>
+                <div class="kontak">
+                    <p><i class="fas fa-envelope"></i> <a href="mailto:ratnazega457@gmail.com">ratnazega457@gmail.com</a></p>
+                    <p><i class="fas fa-phone"></i> <a href="tel:+6282218039350">+62 822-1803-9350</a></p>
+                    <p><i class="fas fa-map-marker-alt"></i> Jl. Pintu Air IV Lk XVII, Kec. Medan Johor, Desa Kwala Bekala</p>
+                    <p><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/agustinratnadewizega" target="_blank" rel="noopener noreferrer">linkedin.com/in/agustinratnadewizega</a></p>
+                    <p><i class="fab fa-github"></i> <a href="https://github.com/Ratnazega" target="_blank" rel="noopener noreferrer">github.com/Ratnazega</a></p>
+                </div>
+            </section>
+
+            <section id="keterampilan" class="fade-in-section">
+                <h3>Keterampilan</h3>
+                <h4>Pemrograman & Database</h4>
+                <ul class="keterampilan-list">
+                    <li>JavaScript</li>
+                    <li>HTML & CSS</li>
+                    <li>Node.js</li>
+                    <li>Python</li>
+                    <li>MySQL</li>
+                </ul>
+                <h4>Alat & Lainnya</h4>
+                <ul class="keterampilan-list">
+                    <li>Git</li>
+                    <li>Docker</li>
+                    <li>CI/CD</li>
+                    <li>Linux</li>
+                </ul>
+            </section>
+
+            <section id="bahasa" class="fade-in-section">
+                <h3>Bahasa</h3>
+                <ul class="list-unstyled">
+                    <li><strong>Bahasa Indonesia</strong></li>
+                    <li><strong>Bahasa Inggris</strong></li>
+                </ul>
+            </section>
+
+            <section id="verifikasi" class="fade-in-section qr-code-container">
+                <h3>Verifikasi Online</h3>
+                <div id="qrcode"></div>
+                <p>Pindai untuk melihat versi CV online yang interaktif.</p>
+            </section>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <header class="header">
+                <h1>Agustin Ratna Dewi Zega S.Kom.</h1>
+                <p class="jabatan">Mahasiswi | Web Developer Enthusiast</p>
+            </header>
+
+            <section id="tentang" class="fade-in-section">
+                <h2><i class="fas fa-user-tie"></i> Profil Profesional</h2>
+                <p>Seorang pengembang web yang memiliki minat besar dalam membangun antarmuka interaktif dan desain web yang responsif. Terampil dalam HTML, CSS, JavaScript, dan memiliki pemahaman tentang Node.js serta pengelolaan database menggunakan MySQL. Mampu bekerja dalam tim maupun individu dengan semangat belajar yang tinggi.</p>
+            </section>
+
+            <section id="pengalaman" class="timeline-section fade-in-section">
+                <h2><i class="fas fa-briefcase"></i> Pengalaman Proyek</h2>
+                <div class="item">
+                    <h3>Praktik Pembentukan Jaringan Komputer</h3>
+                    <p class="info"> Di SMKN 1 Sitolu Ori · 2023/p>
+                    <ul>
+                        <li>Melakukan perakitan dan pemasangan perangkat keras komputer sebagai bagian dari pembentukan jaringan lokal (LAN)</li>
+                        <li>Mempelajari fungsi komponen CPU, kabel, dan perangkat jaringan seperti switch dan router.</li>
+                        <li>Bekerja dalam tim untuk menghubungkan dan mengkonfigurasi beberapa komputer agar saling terhubung dalam satu jaringan.</li>
+                        <li>Meningkatkan keterampilan troubleshooting dasar pada perangkat keras dan jaringan.</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section id="pendidikan" class="timeline-section fade-in-section">
+                <h2><i class="fas fa-graduation-cap"></i> Pendidikan</h2>
+                <div class="item">
+                    <h3>Mahasiswi</h3>
+                    <p class="info"> Di Universitas Satya Terra Bhinnka</p>
+                </div>
+                <div class="item">
+                    <h3>SMK Teknik Komputer dan Jaringan</h3>
+                    <p class="info">SMKN 1 Sitolu Ori · Lulus 2024</p>
+                </div>
+            </section>
+
+            <!-- Sertifikasi -->
+            <section id="sertifikasi" class="fade-in-section">
+                <h2><i class="fas fa-certificate"></i> Sertifikasi</h2>
+                <ul class="list-unstyled">
+                    <li data-image="img/sertifikat/sertifikat_python.jpg">
+                        Python Developer - Sololearn<br>
+                        <small><em>Pencapaian sebagai Python Developer (27 Oktober 2024)</em></small>
+                    <li data-image="img/sertifikat/sertifikat_keamanan_data.jpg">
+                        Strategi Melindungi Data di Dunia Digital<br>
+                         <small><em>Fakultas Teknologi dan Ilmu Komputer, 1 November 2024</em></small>
+                    <li data-image="img/sertifikat/sertifikat_PKL.jpg">
+                        Praktik Kerja Lapangan - SMKN 1 Sitolu Ori <br>
+                        <small><em>Teknik Komputer Dan Jaringan, 07 Februari s/d 15 Juni 2023</em></small>
+                    </li>  
+                    </li>
+                    </li>
+                </ul>
+            </section>
+
+            <!-- Aktivitas & Pencapaian -->
+            <section id="pencapaian" class="fade-in-section">
+                <h2><i class="fas fa-star"></i> Aktivitas & Pencapaian</h2>
+                <ul class="list-unstyled achievements-list">
+                    <li>Merancang dan memasang jaringan komputer skala kecil (LAN) di lingkungan sekolah.</li>
+                    <li>Melakukan konfigurasi perangkat jaringan seperti switch, router, dan kabel UTP dengan metode topologi star.</li>
+                    <li>Berhasil membangun jaringan yang stabil dan dapat digunakan untuk berbagi data antar komputer.</li>
+                    <li>Diakui oleh pembimbing sebagai tim paling cepat menyelesaikan instalasi jaringan dengan konfigurasi yang benar.</li>
+                </ul>
+            </section>
+        </main>
+    </div>
+
+    <!-- Modal Preview Sertifikat -->
+    <div id="image-preview-modal" class="modal-overlay">
+        <span class="modal-close-btn">&times;</span>
+        <img class="modal-content-image" id="modal-image">
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const imageModal = document.getElementById('image-preview-modal');
+            const modalImage = document.getElementById('modal-image');
+
+            // Modal preview gambar sertifikat
+            document.querySelectorAll('#sertifikasi .list-unstyled li').forEach(item => {
+                item.addEventListener('click', () => {
+                    const imageSrc = item.getAttribute('data-image');
+                    if (imageSrc) {
+                        modalImage.src = imageSrc;
+                        imageModal.style.display = 'flex';
+                    }
+                });
+            });
+
+            // Tutup modal
+            const closeBtn = document.querySelector('.modal-close-btn');
+            function closeImageModal() {
+                imageModal.style.display = 'none';
+            }
+            closeBtn.addEventListener('click', closeImageModal);
+            imageModal.addEventListener('click', (e) => {
+                if (e.target === imageModal) closeImageModal();
+            });
+            document.addEventListener('keydown', (e) => {
+                if (e.key === 'Escape' && imageModal.style.display === 'flex') closeImageModal();
+            });
+
+            // Animasi fade in
+            const observer = new IntersectionObserver((entries, obs) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('is-visible');
+                        obs.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.1 });
+            document.querySelectorAll('.fade-in-section').forEach(section => observer.observe(section));
+
+            // QR Code
+            const qrCodeElement = document.getElementById("qrcode");
+            if(qrCodeElement) {
+                new QRCode(qrCodeElement, {
+                    text: window.location.href,
+                    width: 120,
+                    height: 120,
+                    colorDark : "#000000",
+                    colorLight : "#ffffff",
+                    correctLevel : QRCode.CorrectLevel.H
+                });
+            }
+        });
+    </script>
+
+</body>
+</html>
